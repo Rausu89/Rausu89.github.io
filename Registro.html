@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Contactos AnimalPets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/css/agency.css">
+    <link href="css/agency.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="fotito-2" style="background-image: url(img/Wall-Alamy3.jpeg) ">
+    <main class="container">
+        <header>
+            <h1>Contacto Healthy Pets</h1>
+        </header>
+        <form name="datos" method="get">
+
+            <div class="form-group">
+                <label for="rut">Rut</label>
+                <input type="text" class="form-control" id="rut" name="rut" placeholder="Ingrese su Rut" pattern="\d{3,8}-[\d|kK]{1}" required>
+
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" pattern="[^a-zA-Z \-]|( )|(\-\-)|(^\s*$)" required>
+
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido" pattern="[^a-zA-Z \-]|( )|(\-\-)|(^\s*$)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Correo">Correo</label>
+                <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Ingrese su correo" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Telefono">Telefono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su numero de telefono" pattern="[0-9]{9}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Combobox">Direccion</label>
+                <select class="form-control" name="direccion" id="direccion"> <option value="0" placeholder="direccion"  >Seleccione</option></select>
+            </div>
+
+            <div class="form-group">
+                <label for="Combobox">Comuna</label>
+                <select class="form-control" name="seleccomuna" id="Comunas"> <option value="0" placeholder="Seleccione  Comuna "  >Seleccione</option></select>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" class="form-control" id="edad" name="edad" placeholder="Ingrese su edad" min="18" max="99" pattern="[\d]+" required>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <input type="reset" value="Limpiar" id="limpiar" class="btn btn-primary" name="Limpiar" />
+            <button type="reset" class="btn btn-primary" onclick="location.href='index.html';">Volver</button>
+        </form>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; Mi sitio 2022</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item">
+                                <a href="#">Maria Jose Carvajal</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Diego Barria</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Allan Araus</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script>
+        datos.Limpiar.addEventListener("click", function() {
+            if (!confirm("Desea Limpiar el Formulario?"))
+                event.preventDefault();
+        })
+    </script>
+</body>
+
+</html>
