@@ -28,59 +28,76 @@ and open the template in the editor.
 
 </head>
 
-<body class="fotito-2" style="background-image: url(img/Wall-Alamy3.jpeg) ">
+<body class="fotito-2" style="background-image: url(img/fondo-veterinario-274959102.jpg) ">
     <main class="container">
-        <header>
+        <header style="background-color:orangered; color:whitesmoke">
             <h1>Contacto Healthy Pets</h1>
         </header>
         <form name="datos" method="get">
 
             <div class="form-group">
-                <label for="rut">Rut</label>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke " for="rut">Rut</label>
                 <input type="text" class="form-control" id="rut" name="rut" placeholder="Ingrese su Rut" pattern="\d{3,8}-[\d|kK]{1}" required>
 
             </div>
 
             <div class="form-group">
-                <label for="nombre">Nombre</label>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke" for="nombre">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" pattern="[^a-zA-Z \-]|( )|(\-\-)|(^\s*$)" required>
 
             </div>
 
             <div class="form-group">
-                <label for="apellido">Apellido</label>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke" for="apellido">Apellido</label>
                 <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido" pattern="[^a-zA-Z \-]|( )|(\-\-)|(^\s*$)" required>
             </div>
 
             <div class="form-group">
-                <label for="Correo">Correo</label>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke" for="Correo">Correo</label>
                 <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Ingrese su correo" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
             </div>
 
             <div class="form-group">
-                <label for="Telefono">Telefono</label>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke" for="Telefono">Telefono</label>
                 <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su numero de telefono" pattern="[0-9]{9}" required>
             </div>
 
             <div class="form-group">
-                <label for="Combobox">Direccion</label>
-                <select class="form-control" name="direccion" id="direccion"> <option value="0" placeholder="direccion"  >Seleccione</option></select>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke" for="Combobox">Direccion</label>
+                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su direccion">
             </div>
 
             <div class="form-group">
-                <label for="Combobox">Comuna</label>
-                <select class="form-control" name="seleccomuna" id="Comunas"> <option value="0" placeholder="Seleccione  Comuna "  >Seleccione</option></select>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke" for="Combobox">Comuna</label>
+                <select class="form-control" name="seleccomuna" id="Comunas">
+                    <option value="0" placeholder="Seleccione  Comuna ">Seleccione</option>
+                    <option value="C01">Cerrillos</option>
+                    <option value="C02">Cerro Navia</option>
+                    <option value="C03">Conchalí</option>
+                    <option value="C04">El Bosque</option>
+                    <option value="C05">Estación Central</option>
+                    <option value="C06">Huechuraba</option>
+                    <option value="C07">Independencia</option>
+                    <option value="C08">La Cisterna</option>
+                    <option value="C09">La Florida</option>
+                    <option value="C10">La Granja</option>
+                    <option value="C11">La Pintana</option>
+                    <option value="C12">La Reina</option>
+                    <option value="C13">Las Condes</option>
+                    <option value="C14">Lo Barnechea</option>
+
+                </select>
             </div>
 
 
 
             <div class="form-group">
-                <label for="edad">Edad</label>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke" for="edad">Edad</label>
                 <input type="number" class="form-control" id="edad" name="edad" placeholder="Ingrese su edad" min="18" max="99" pattern="[\d]+" required>
             </div>
 
 
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" name="Enviar">Enviar</button>
             <input type="reset" value="Limpiar" id="limpiar" class="btn btn-primary" name="Limpiar" />
             <button type="reset" class="btn btn-primary" onclick="location.href='index.html';">Volver</button>
         </form>
@@ -135,11 +152,12 @@ and open the template in the editor.
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
     <script>
-        datos.Limpiar.addEventListener("click", function() {
+        datos.Limpiar.addEventListener("click", function () {
             if (!confirm("Desea Limpiar el Formulario?"))
                 event.preventDefault();
         })
     </script>
+
 </body>
 
 </html>

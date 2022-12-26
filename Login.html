@@ -27,25 +27,28 @@ and open the template in the editor.
 
 </head>
 
-<body class="fotito" style="background-image: url(img/Wall-Alamy3.jpeg) ">
+<body class="fotito" style="background-image: url(img/fondo-veterinario-274959102.jpg) ">
     <main class="container">
-        <header>
+        <header style="background-color:orangered; color:whitesmoke">
             <h1>Login Healthy Pets </h1>
         </header>
         <form name="datos" method="get">
 
             <div class="form-group">
-                <label for="Correo">Correo</label>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke " for="Correo">Correo</label>
                 <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Ingrese su correo" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" required>
             </div>
             <div class="form-group">
-                <label for="Correo">Contraseña</label>
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke " for="Correo">Contraseña</label>
                 <input type="password" class="form-control" id="Contraseña" name="Contraseña" placeholder="Ingrese su contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
             </div>
             <br>
-            <button type="submit" class="btn btn-primary">Ingresar</button>
-            <input type="reset" value="Limpiar" id="limpiar" class="btn btn-primary" name="Limpiar" />
-            <button type="reset" class="btn btn-primary" onclick="location.href='index.html';">Volver</button>
+            <div class="botones-urgencia">
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+                <input type="reset" value="Limpiar" id="limpiar" class="btn btn-primary" name="Limpiar" />
+                <button type="reset" class="btn btn-primary" onclick="location.href='index.html';">Volver</button>
+            </div>
+
         </form>
 
         <footer>

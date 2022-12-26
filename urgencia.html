@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Urgencia AnimalPets</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/brands.css" rel="stylesheet" />
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/css/agency.css">
+    <link href="css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body class="fotito" style="background-image: url(img/fondo-veterinario-274959102.jpg) ">
+    <main class="container">
+        <header style="background-color:orangered; color:whitesmoke">
+            <h1>Servicio de Atencion de Urgencias Healthy Pets </h1>
+        </header>
+        <form name="datos" method="get">
+            <div class="form-group">
+                <label class="text-uppercase" style="background-color: darkblue; color: whitesmoke " for="nombre">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" pattern="[^a-zA-Z \-]|( )|(\-\-)|(^\s*$)" required>
+            </div>
+            <div class="botones-urgencia">
+                <button type="submit" class="btn btn-primary">Ingresar Urgencia</button>
+                <input type="reset" value="Limpiar" id="limpiar" class="btn btn-primary" name="Limpiar" />
+                <button type="reset" class="btn btn-primary" onclick="location.href='index.html';">Volver Atras</button>
+            </div>
+
+        </form>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/veterinarias/vet1.jpg" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Veterinaria Providencia</h4>
+                    <li>Dirección: La concepcion #156</li>
+                    <li>Teléfono: +569 50168264</li>
+                    <li>Teléfono: +569 50168263</li>
+                    <li>Horario de atención: Lunes a Viernes de 08:00hrs a 19:00hrs y Urgencias 24hrs</li>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/veterinarias/vet6.jpg" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Veterinaria Stgo Centro</h4>
+                    <li>Dirección: Catedral #1888</li>
+                    <li>Teléfono: +569 52268264</li>
+                    <li>Teléfono: +569 54568263</li>
+                    <li>Horario de atención: Lunes a Viernes de 08:00hrs a 19:00hrs y Urgencias 24hrs</li>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/veterinarias/vet3.jpg" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Veterinaria Quinta Normal</h4>
+                    <li>Dirección: San Pablo #1234</li>
+                    <li>Teléfono: +569 50268265</li>
+                    <li>Teléfono: +569 50368267</li>
+                    <li>Horario de atención: Lunes a Viernes de 08:00hrs a 19:00hrs y Urgencias 24hrs</li>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; Mi sitio 2022</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li class="list-inline-item">
+                                <a href="#">Maria Jose Carvajal</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Diego Barria</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Allan Araus</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 1 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog " style="background-color:orangered">
+                    <div class="modal-content" style="background-color: lightsteelblue; background-image: url(img/Wall-Alamy2.jpeg)">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl"></div>
+                            </div>
+                        </div>
+                        <div class="container" style="background-color: blanchedalmond">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body" style="background-image: url(img/fondo-ficha-vet.jpg)">
+                                        <!-- Project Details Go Here -->
+                                        <h2 class="text-uppercase">Veterinaria Healthy Pets Providencia</h2>
+                                        <img class="img-fluid d-block mx-auto" src="img/veterinarias/vet1.jpg" alt="">
+                                        <p>Informacion de la veterinaria</p>
+                                        <p>
+                                            Ofrecemos atención Veterinaria 24 horas, urgencías, cirugías, hospitalización, Venta de Alimentos, Accesorios, y todos los servicios necesarios para su mascota. Perros, gatos y animales exóticos, son bienvenidos
+                                            a nuestra Clínica. Si tiene una emergencia Llámenos de Inmediato al +569 50168264 , uno de nuestros veterinarios 24 horas podrá aconsejarle lo mejor para su mascota. Visitenos, pongase en contacto con Healthy
+                                            Pets Urgencias Veterinarias 24 horas.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li>Dirección: La concepcion #156</li>
+                                            <li>Teléfono: +569 50168264</li>
+                                            <li>Teléfono: +569 50168263</li>
+                                            <li>Horario de atención: Lunes a Viernes de 08:00hrs a 19:00hrs y Urgencias 24hrs</li>
+                                            <li>Correo Electronico: Veterinaria Healthy@gmail.com</li>
+                                            <br>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.94959673542!2d-70.6180778850924!3d-33.42455840356935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf64091f21d7%3A0x8627727957780944!2sLa%20Concepci%C3%B3n%20156%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1671589308003!5m2!1ses-419!2scl"
+                                                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                        </ul>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                            <i class="fas fa-times"></i>
+                                            Cerrar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 2 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog"style="background-color:orangered">
+                    <div class="modal-content" style="background-color: lightsteelblue; background-image: url(img/Wall-Alamy2.jpeg)">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl"></div>
+                            </div>
+                        </div>
+                        <div class="container" style="background-color: blanchedalmond">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body" style="background-image: url(img/fondo-ficha-vet.jpg)">
+                                        <!-- Project Details Go Here -->
+                                        <h2 class="text-uppercase">Veterinaria Healthy Pets Stgo Centro</h2>
+                                        <img class="img-fluid d-block mx-auto" src="img/veterinarias/vet6.jpg" alt="">
+                                        <p>Informacion de la veterinaria</p>
+                                        <p>Ofrecemos atención Veterinaria 24 horas, urgencías, cirugías, hospitalización, Venta de Alimentos, Accesorios, y todos los servicios necesarios para su mascota. Perros, gatos y animales exóticos, son bienvenidos
+                                            a nuestra Clínica. Si tiene una emergencia Llámenos de Inmediato al +569 52268264 , uno de nuestros veterinarios 24 horas podrá aconsejarle lo mejor para su mascota. Visitenos, pongase en contacto con Healthy
+                                            Pets Urgencias Veterinarias 24 horas.</p>
+                                        <ul class="list-inline">
+                                            <li>Dirección: Catedral #1888</li>
+                                            <li>Teléfono: +569 52268264</li>
+                                            <li>Teléfono: +569 54568263</li>
+                                            <li>Horario de atención: Lunes a Viernes de 08:00hrs a 19:00hrs y Urgencias 24hrs</li>
+                                            <li>Correo Electronico: Veterinaria Healthy@gmail.com</li>
+                                        </ul>
+                                        <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.3920305947418!2d-70.66364279999999!3d-33.439091499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5add95cff99%3A0x8cdd060227746187!2sCatedral%201888%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1671588211528!5m2!1ses-419!2scl
+                                        " width="400 " height="300 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>"
+                                        <br>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: lightsteelblue; background-image: url(img/Wall-Alamy2.jpeg)">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl"></div>
+                            </div>
+                        </div>
+                        <div class="container" style="background-color: blanchedalmond">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto">
+                                    <div class="modal-body" style="background-image: url(img/fondo-ficha-vet.jpg)">
+                                        <!-- Project Details Go Here -->
+                                        <h2 class="text-uppercase">Veterinaria Healthy Pets Quinta Normal</h2>
+                                        <img class="img-fluid d-block mx-auto" src="img/veterinarias/vet3.jpg" alt="">
+                                        <p>Informacion de la veterinaria</p>
+                                        <p>Ofrecemos atención Veterinaria 24 horas, urgencías, cirugías, hospitalización, Venta de Alimentos, Accesorios, y todos los servicios necesarios para su mascota. Perros, gatos y animales exóticos, son bienvenidos
+                                            a nuestra Clínica. Si tiene una emergencia Llámenos de Inmediato al +569 50268265 , uno de nuestros veterinarios 24 horas podrá aconsejarle lo mejor para su mascota. Visitenos, pongase en contacto con Healthy
+                                            Pets Urgencias Veterinarias 24 horas.</p>
+                                        <ul class="list-inline">
+                                            <li>Dirección: San Pablo #1234</li>
+                                            <li>Teléfono: +569 50268265</li>
+                                            <li>Teléfono: +569 50368267</li>
+                                            <li>Horario de atención: Lunes a Viernes de 08:00hrs a 19:00hrs y Urgencias 24hrs</li>
+                                            <li>Correo Electronico: Veterinaria Healthy@gmail.com</li>
+                                            <br>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.566903203627!2d-70.6572228850921!3d-33.434534004081016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5bae9a530f3%3A0x83fe9954f6ac4e22!2sAv.%20San%20Pablo%201234%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1671588679278!5m2!1ses-419!2scl"
+                                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                        </ul>
+                                        <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script>
+        datos.Limpiar.addEventListener("click", function() {
+            if (!confirm("Desea Limpiar el Formulario?"))
+                event.preventDefault();
+        })
+    </script>
+</body>
+
+</html>
